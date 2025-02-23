@@ -15,8 +15,25 @@ main {
     padding: 2em;
 }
 
-#theme-section {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin-top: 2em;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 1em;
+    color: red;
 }
