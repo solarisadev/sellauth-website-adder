@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Uploader</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Theme</h1>
+        <form id="theme-upload-form" enctype="multipart/form-data">
+            <label for="api-token">API Token:</label>
+            <input type="text" id="api-token" name="api-token" required>
+            
+            <label for="theme-file">Select Theme File:</label>
+            <input type="file" id="theme-file" name="theme-file" accept=".zip,.tar,.rar" required>
+            
+            <button type="submit">Upload Theme</button>
+        </form>
+        <div id="upload-status"></div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
